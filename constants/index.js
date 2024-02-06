@@ -1,2 +1,2 @@
-export * from './mapStyles';
-export * from './legendColors';
+export * from "./mapStyles";
+export * from "./legendColors";

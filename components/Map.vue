@@ -4,25 +4,24 @@
     :options="{
       style,
       center: [-118.243683, 34.052235], // LA as starting position
-      zoom: 9 // Layer only renders starting at zoom level 9
+      zoom: 9, // Layer only renders starting at zoom level 9
     }"
   >
-  </MapboxMap>  
+  </MapboxMap>
 </template>
 
 <script setup>
-import { useMapStore } from '@/stores/mapStore';
+import { useMapStore } from "@/stores/mapStore";
 
 const mapStore = useMapStore();
-const { mapStyle: style} = storeToRefs(mapStore)
+const { mapStyle: style } = storeToRefs(mapStore);
 
-useMapbox('jeni-la-county', (map) => {
-  map.on('click', (e) => {
+useMapbox("jeni-la-county", (map) => {
+  map.on("click", (e) => {
     const data = map.queryRenderedFeatures(e.point, {
-      layers: ['jeni']
+      layers: ["jeni"],
     });
-    mapStore.setJeniData(data[0].properties)
-  })
-})
-
+    mapStore.setJeniData(data[0].properties);
+  });
+});
 </script>

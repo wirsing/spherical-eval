@@ -2,16 +2,19 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    'nuxt-mapbox',
+    "nuxt-mapbox",
     [
-      '@pinia/nuxt',
+      "@pinia/nuxt",
       {
-        autoImports: ['defineStore'],
-      }
+        autoImports: ["defineStore"],
+      },
     ],
-    '@nuxt/ui'
+    "@nuxt/ui",
   ],
   mapbox: {
-    accessToken: process.env.MAPBOX_TOKEN
-  }
-})
+    accessToken: process.env.MAPBOX_TOKEN,
+  },
+  css: [
+    "~/assets/style/main.scss",
+  ],
+});
