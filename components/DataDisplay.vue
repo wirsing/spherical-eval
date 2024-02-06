@@ -17,7 +17,7 @@
       Criminalization Risk: {{ data?.riskcategory }} -
       {{ parseInt(data?.riskpctl) || 0 }}%
     </h3>
-    <hr />
+    <hr>
     <h3>Neighborhood: {{ data?.neighborhood }}</h3>
     <h3>Supervisorial District: {{ data?.sup_dist }}</h3>
     <h3>Service Planning Area: {{ data?.spa }}</h3>

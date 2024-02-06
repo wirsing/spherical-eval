@@ -1,4 +1,5 @@
 import { CHOROPLETH_COLORS } from "@/constants/";
+import { defineStore } from 'pinia'
 
 export const useMapStore = defineStore("mapData", {
   state: () => {
@@ -14,16 +15,12 @@ export const useMapStore = defineStore("mapData", {
       switch (this.visualization) {
         case "Jeni Ranking":
           return CHOROPLETH_COLORS.ranking;
-          break;
         case "Inequity Drivers":
           return CHOROPLETH_COLORS.drivers;
-          break;
         case "Jeni Heatmap":
           return CHOROPLETH_COLORS.jeniHeat;
-          break;
         case "Criminalization Heatmap":
           return CHOROPLETH_COLORS.crimHeat;
-          break;
       }
     },
   },

@@ -1,10 +1,10 @@
 <template>
   <div class="ui">
-    <UserNav></UserNav>
+    <UserNav />
     <DataDisplay
       v-if="visualization && visualization != 'No Data'"
-    ></DataDisplay>
-    <Legend></Legend>
+    />
+    <MapLegend />
   </div>
 </template>
 

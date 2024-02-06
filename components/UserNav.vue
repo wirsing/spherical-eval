@@ -12,8 +12,6 @@ import { useMapStore } from "@/stores/mapStore";
 import { MAPBOX_STYLES } from "@/constants/";
 
 const mapStore = useMapStore();
-const { jeniData } = storeToRefs(mapStore);
-
 // set default style to no data viz
 const style = ref(MAPBOX_STYLES[0].value);
 

@@ -3,12 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     "nuxt-mapbox",
-    [
-      "@pinia/nuxt",
-      {
-        autoImports: ["defineStore"],
-      },
-    ],
+    "@pinia/nuxt",
     "@nuxt/ui",
   ],
   mapbox: {

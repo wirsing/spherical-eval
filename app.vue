@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Map></Map>
-    <DisplayModal></DisplayModal>
+    <BaseMap />
+    <DisplayModal />
   </div>
 </template>

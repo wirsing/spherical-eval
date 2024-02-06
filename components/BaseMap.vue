@@ -6,8 +6,7 @@
       center: [-118.243683, 34.052235], // LA as starting position
       zoom: 9, // Layer only renders starting at zoom level 9
     }"
-  >
-  </MapboxMap>
+  />
 </template>
 
 <script setup>

@@ -1,7 +1,14 @@
 <template>
   <div class="legend">
-    <div class="legend-item" v-for="{ name, color } in mapStore.legendData">
-      <div class="square" :style="{ backgroundColor: color }"></div>
+    <div
+      v-for="{ name, color } in mapStore.legendData"
+      :key="name"
+      class="legend-item"
+    >
+      <div
+        class="square"
+        :style="{ backgroundColor: color }"
+      />
       <h2>{{ name }}</h2>
     </div>
   </div>
