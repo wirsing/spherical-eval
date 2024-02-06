@@ -10,6 +10,7 @@ body {
   display: flex;
   place-items: center;
   margin: 0;
+  color: black;
 }
 
 #__nuxt {

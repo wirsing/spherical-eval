@@ -1,14 +1,17 @@
 <template>
   <div class="container">
-    <h2> {{ data?.zip }}</h2>
-    <div>
-      <h3> Jeni Percentile {{ parseInt(data?.jenipctl || 0) }} %</h3>
-      <UMeter :value="parseInt(data?.jenipctl || 0)"></UMeter>
-    </div>
-    <div>
-      <h3> Jeni Tier </h3>
-      <h3> {{ data?.jenicategory }} </h3>
-    </div>
+    <h2> Zip Code: {{ data?.zip }}</h2>
+    <h3> Jeni Percentile: {{ parseInt(data?.jenipctl || 0) }} %</h3>
+    <!-- Would be fun to use these: -->
+    <!-- <UMeter :value="parseInt(data?.jenipctl || 0)">/UMeter> -->
+    <h3> System Involvement: {{ data?.systemcategory }} - {{ parseInt(data?.systempctl || 0) }}%</h3>
+    <h3> Inequity Drivers: {{ data?.driverscategory }} - {{ parseInt(data?.driverspctl) || 0}}%</h3>
+    <h3> Criminalization Risk: {{ data?.riskcategory }} - {{ parseInt(data?.riskpctl) || 0}}%</h3>
+    <hr>
+    <h3> Neighborhood: {{ data?.neighborhood }}</h3>
+    <h3> Supervisorial District: {{ data?.sup_dist }}</h3>
+    <h3> Service Planning Area: {{ data?.spa }}</h3>
+    <h3> Countywide Statistical Area: {{ data?.csa }}</h3>
   </div>
 </template>
 
@@ -17,11 +20,25 @@ import { useMapStore } from '@/stores/mapStore';
 
 const mapStore = useMapStore();
 const { jeniData: data} = storeToRefs(mapStore)
-console.log(data?.jenipctl)
 </script>
 
 <style lang="scss">
 .container {
-  background-color: blue;
+  margin-top: 2rem;
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  h2, h3 {
+    margin-top: .5rem;
+    color: black;
+  }
+
+  hr {
+    border: none;
+    height: 1rem;
+  }
 }
+
 </style>

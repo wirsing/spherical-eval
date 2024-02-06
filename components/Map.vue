@@ -21,7 +21,6 @@ useMapbox('jeni-la-county', (map) => {
     const data = map.queryRenderedFeatures(e.point, {
       layers: ['jeni']
     });
-    console.log(data[0].properties)
     mapStore.setJeniData(data[0].properties)
   })
 })
