@@ -7,6 +7,7 @@ export const useMapStore = defineStore('mapData', {
   },
   actions: {
     setJeniData(data) {
+      console.log(data)
       this.jeniData = data
     },
     setMapStyle(data) {
