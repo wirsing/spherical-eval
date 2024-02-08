@@ -26,13 +26,14 @@ const mapStore = useMapStore();
 }
 
 .square {
-  width: 2rem;
-  height: 2rem;
-  margin-bottom: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .legend-item {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  font-size: 1.7rem;
 }
 </style>

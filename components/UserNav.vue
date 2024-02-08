@@ -1,6 +1,7 @@
 <template>
   <USelect
     v-model="style"
+    size="xl"
     :options="MAPBOX_STYLES"
     option-attribute="name"
     @change="onChange()"
@@ -30,3 +31,11 @@ const onChange = () => {
   mapStore.setVisualization(findKey(MAPBOX_STYLES, style.value));
 };
 </script>
+
+<style lang="scss" scoped>
+:deep select{
+  height: 4rem;
+  line-height: 2rem;
+  font-size: 1.8rem;
+}
+</style>

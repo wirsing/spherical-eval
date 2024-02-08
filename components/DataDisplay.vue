@@ -35,6 +35,7 @@ const { jeniData: data } = storeToRefs(mapStore);
 <style lang="scss" scoped>
 div {
   margin-top: 2rem;
+  font-size: 1.7rem;
 
   h2 {
     text-decoration: underline;

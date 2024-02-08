@@ -21,8 +21,8 @@ const { visualization } = storeToRefs(mapStore);
   position: fixed;
   top: 2rem;
   left: 2rem;
-  width: 30rem;
-  height: 50rem;
+  width: 45rem;
+  height: 70rem;
   border-radius: 1rem;
   background-color: #fff;
   box-shadow:

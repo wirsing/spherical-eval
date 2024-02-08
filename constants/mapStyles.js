@@ -16,7 +16,7 @@ export const MAPBOX_STYLES = [
     value: "mapbox://styles/wirsing/clsan628500hc01pv6cmvcxiu",
   },
   {
-    name: "Criminalization Heatmap",
+    name: "Criminalization Risk Heatmap",
     value: "mapbox://styles/wirsing/clsaobe4a00h201pu76xmf26b",
   },
 ];
