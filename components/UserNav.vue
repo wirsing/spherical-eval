@@ -33,7 +33,7 @@ const onChange = () => {
 </script>
 
 <style lang="scss" scoped>
-:deep select{
+:deep(select) {
   height: 4rem;
   line-height: 2rem;
   font-size: 1.8rem;
