@@ -37,7 +37,11 @@ yarn preview
 
 ## Env Variables
 
-You will need a mapbox access token to access maps and styles. Create your own accound and contact the author to get access to the map styles.
+You will need a mapbox access token to access maps and styles. Create your own account and contact the author to get access to the map styles. Paste the token into a .env and you're off to the races.
+
+```bash
+MAPBOX_TOKEN="xxx"
+```
 
 ## Todos
 
