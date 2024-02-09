@@ -19,7 +19,7 @@ export const useMapStore = defineStore("mapData", {
           return CHOROPLETH_COLORS.drivers;
         case "Jeni Heatmap":
           return CHOROPLETH_COLORS.jeniHeat;
-        case "Criminalization Heatmap":
+        case "Criminalization Risk Heatmap":
           return CHOROPLETH_COLORS.crimHeat;
       }
     },
